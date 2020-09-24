@@ -98,7 +98,7 @@
       class="container d-flex flex-column justify-content-center"
       style="min-height: 40vh"
     >
-      <div class="images"></div>
+      <div class="images mt-3"></div>
       <h3 class="ml-auto text-center">Upload image:</h3>
       <label class="custom-file-upload ml-auto">
         <i class="fas fa-upload icon"> </i>
@@ -142,6 +142,7 @@
 
             imgElem.setAttribute("height", "200px");
             imgElem.setAttribute("width", "200px");
+            imgElem.style.border = "2px solid #fff";
           };
           reader.onerror = function (e) {
             alert("Ne moze da se ucita slika");
