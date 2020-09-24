@@ -1,90 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
     <title>Travel</title>
-</head>
-<body>
-    <div class="container">
-        <!-- Nav -->
-        <nav>
-            <a href=""><img src="img/logo_1.jpg" alt=""></a>
-            <ul>
-                <li><a href="index.html" class='current'>Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-    </div>
-    <hr>
-        <!-- Section one -->
-        <section class='one'>
-            <img src="img/quiske.jpg" alt="" style='width:100%'>
-            <div class="container">
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="border-bottom: 2px solid orange !important"
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="img/logo_1.jpg" class="img-fluid" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            </div>    
-        <div class="container">
-        <h2>WHAT WE OFFER</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim id earum laudantium dolorem adipisci 
-            illum aperiam nam minus explicabo debitis.</p>
-            <div class="images">
-                <div class="img1">
-                <img src="img/flight.png" alt="">
-                <span>Amazing travel</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas nemo sed in! Facilis non excepturi, 
-                    unde fugiat ducimus neque!</p>
-                    <button class='btn'>Read more</button>
-                </div>
-                <div class="img2"><img src="img/globe.png" alt="">
-                    <span>Discover</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas nemo sed in! Facilis non excepturi, 
-                        unde fugiat ducimus neque!</p>
-                        <button class='btn'>Read more</button>
-                </div>
-                <div class="img3"><img src="img/flag.png" alt="">
-                    <span>Book your trip</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas nemo sed in! Facilis non excepturi, 
-                        unde fugiat ducimus neque!</p>
-                        <button class='btn'>Read more</button>
-                </div>
-                
-                <div class="img4"><img src="img/support.png" alt="">
-                    <span>Nice Support</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas nemo sed in! Facilis non excepturi, 
-                        unde fugiat ducimus neque!</p>
-                        <button class='btn'>Read more</button>
-                </div>
-                
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
 
-            </div>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="destinations.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Destinations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="gallery.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Galery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="blog.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="contact.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section one -->
+    <section class="one">
+      <video width="100%" height="100%" autoplay="true" muted="true">
+        <source
+          src="video/Introducing Inspiring Travel Company.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="container">
+        <h2 class="display-3 m-5">WHAT WE OFFER</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim id earum
+          laudantium dolorem adipisci illum aperiam nam minus explicabo debitis.
+        </p>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-3 text-center mb-3">
+            <img
+              src="img/flight.png"
+              class="img-fluid mb-3"
+              alt=""
+              style="height: 100px"
+            />
+            <h4>Amazing travel</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              quas nemo sed in! Facilis non excepturi, unde fugiat ducimus
+              neque!
+            </p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <div class="col-md-3 text-center mb-3">
+            <img
+              src="img/globe.png"
+              class="img-fluid mb-3"
+              alt=""
+              style="height: 100px"
+            />
+            <h4>Discover</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              quas nemo sed in! Facilis non excepturi, unde fugiat ducimus
+              neque!
+            </p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <div class="col-md-3 text-center mb-3">
+            <img
+              src="img/flag.png"
+              class="img-fluid mb-3"
+              alt=""
+              style="height: 100px"
+            />
+            <h4>Book your trip</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              quas nemo sed in! Facilis non excepturi, unde fugiat ducimus
+              neque!
+            </p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+
+          <div class="col-md-3 text-center mb-3">
+            <img
+              src="img/support.png"
+              class="img-fluid mb-3"
+              alt=""
+              style="height: 100px"
+            />
+            <h4>Nice Support</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              quas nemo sed in! Facilis non excepturi, unde fugiat ducimus
+              neque!
+            </p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
         </div>
-        </section>
-        <!-- section two -->
-        <section class="two">
-            <div class="container">
-            <h2>Upload Photo and Win a Prize</h2>
-            <p>Upload your photo from most interesting destinations and get a chance to win a prize</p>
-            <button class='btn'>Details</button>
+      </div>
+    </section>
+    <!-- section two -->
+    <section class="two">
+      <div
+        class="container text-center d-flex flex-column justify-content-center align-items-center"
+        style="height: 90%"
+      >
+        <h2 class="display-1">Upload Photo and Win a Prize</h2>
+        <p class="lead">
+          Upload your photo from most interesting destinations and get a chance
+          to win a prize
+        </p>
+        <a href="gallery.html"
+          ><button class="btn btn-info btn-lg">Details</button></a
+        >
+      </div>
+    </section>
+
+    <!-- top destinations -->
+    <section class="dest">
+      <div class="container">
+        <h3 class="display-4 text-center m-3" style="color: orange">
+          TOP DESTINATIONS
+        </h3>
+        <div class="row">
+          <div
+            class="col-md-4 venice text-center text-light d-flex flex-column justify-content-center"
+            style="height: 400px; border: 2px solid #fff"
+          >
+            <h5>Venice</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              harum eos laborum excepturi quae doloremque.
+            </p>
+            <button
+              class="btn btn-sm btn-secondary"
+              style="display: inline-block; width: 50%; margin: 0 auto"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="col-md-4 paris text-center text-light d-flex flex-column justify-content-center"
+            style="height: 400px; border: 2px solid #fff"
+          >
+            <h5>Paris</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              harum eos laborum excepturi quae doloremque.
+            </p>
+            <button
+              class="btn btn-sm btn-secondary"
+              style="display: inline-block; width: 50%; margin: 0 auto"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="col-md-4 rome text-center text-light d-flex flex-column justify-content-center"
+            style="height: 400px; border: 2px solid #fff"
+          >
+            <h5>Rome</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              harum eos laborum excepturi quae doloremque.
+            </p>
+            <button
+              class="btn btn-sm btn-secondary"
+              style="display: inline-block; width: 50%; margin: 0 auto"
+            >
+              Read more
+            </button>
+          </div>
         </div>
+        <hr
+          style="
+            height: 2px;
+            background-color: orange;
+            border: none;
+            width: 100%;
+          "
+        />
+        <h3 class="display-4 text-center mb-4" style="color: orange">
+          TRAVEL PLANNING TRIPS & ADVICE FOR EVERYONE
+        </h3>
+        <div class="row">
+          <div class="col-md-9">
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              minus! Cupiditate harum optio commodi assumenda itaque rerum
+              doloribus exercitationem dignissimos soluta quo molestias
+              voluptatum voluptate magnam dolor quam inventore recusandae fuga
+              ullam, nam asperiores vel a provident veniam esse. Sed!
+            </p>
+            <p class="lead">
+              For more informations visit our <a href="blog.html"> Blog</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img src="img/travel_blog.jpeg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- footer -->
+    <footer>
+      <ul
+        class="list-group list-group-horizontal d-flex justify-content-around"
+      >
+        <li class="list-group-item">&copy; SmartInIt 2020.</li>
+        <li class="list-group-item"><a href="">Home</a></li>
+        <li class="list-group-item"><a href="">Privacy Policy</a></li>
+        <li class="list-group-item"><a href="">Contact us</a></li>
+      </ul>
+    </footer>
 
-        <footer>
-            <ul class='list-group list-group-horizontal d-flex justify-content-around  '>
-                <li class='list-group-item'>&copy; SmartInIt 2020.</li>
-                <li class='list-group-item'><a href="">Home</a></li>
-                <li class='list-group-item'><a href="">Privacy Policy</a></li>
-                <li class='list-group-item'><a href="">Contact us</a></li>
-                
-            </ul>
-        </footer>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
