@@ -118,3 +118,10 @@ input[type="file"] {
   font-size: 5rem;
   color: blue;
 }
+
+.content .col-md-4 {
+  padding: 20px;
+  flex: 0.28;
+  border: 1px dotted orange;
+  margin-right: 10px;
+}
