@@ -3,6 +3,23 @@
   margin: 0;
   padding: 0;
 }
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+a:hover {
+  outline: none !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
 
 /* Navbar */
 
@@ -130,6 +147,11 @@ input[type="file"] {
 }
 .blog {
   background: url(img/Travel.jpg) center center/cover no-repeat;
+  height: 40vh;
+}
+
+.booking {
+  background: url(img/Travel-GettyImages.jpg) center center/cover no-repeat;
   height: 40vh;
 }
 

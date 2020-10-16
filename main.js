@@ -41,18 +41,17 @@ const goBack = () => {
   blogSerbia.style.display = "none";
 };
 const postComment = () => {
+
   const date = new Date();
-  comment.innerHTML += `<div class='mb-1 p-1' style='border:1px dotted orange;background-color:#ddd'>${
-    textarea.value
-  }
-  <span style='float:right'>posted on ${date.getDate()}-${
-    date.getMonth() + 1
-  }-${date.getFullYear()} ${
-    date.getHours() < 10 ? `0${date.getHours()}` : date.getHours()
-  }:${
-    date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes()
-  }</span></div>`;
-  textarea.value = "";
+  textarea.value != ""
+    ? (comment.innerHTML += `<div class='mb-1 p-1' style='border:1px dotted orange;background-color:#ddd'>${textarea.value
+      }
+  <span style='float:right'>posted on ${date.getDate()}-${date.getMonth() + 1
+      }-${date.getFullYear()} ${date.getHours() < 10 ? `0${date.getHours()}` : date.getHours()
+      }:${date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes()
+      }</span></div>`)
+    : alert("niste uneli kometar")
+
 };
 
 const blogsArray = Array.from(listBlogs);

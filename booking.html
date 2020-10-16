@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="main.css" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="border-bottom: 2px solid orange !important"
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="img/logo_1.jpg" class="img-fluid" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="destinations.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Destinations</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="booking.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Booking</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="gallery.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Galery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="blog.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="contact.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- booking -->
+    <main class='booking'></main>
+
+    <!-- table -->
+    <div class="container mt-3">
+    <table id="table" class='text-center'>
+        <thead>
+            <tr>
+                <th>Destination</th>
+                <th>Starting date</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Details</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id='tbody' >
+            
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal London-->
+<div class="modal fade" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">London</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/london.jpeg" alt="" class='img-fluid'>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus a quidem nostrum earum quae culpa, molestias tempora vitae in fuga non consequatur sit, et mollitia facilis dicta magnam dolorum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal New York-->
+<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New York</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/sremski_karlovci.jpg" alt="" class='img-fluid'>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus a quidem nostrum earum quae culpa, molestias tempora vitae in fuga non consequatur sit, et mollitia facilis dicta magnam dolorum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal Paris-->
+<div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Paris</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/paris.jpg" alt="" class='img-fluid' width='450px'>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus a quidem nostrum earum quae culpa, molestias tempora vitae in fuga non consequatur sit, et mollitia facilis dicta magnam dolorum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Rome-->
+<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rome</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/rome.jpg" alt="" class='img-fluid'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus a quidem nostrum earum quae culpa, molestias tempora vitae in fuga non consequatur sit, et mollitia facilis dicta magnam dolorum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Thailand-->
+<div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thailand</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/thailand.jpg" alt="" class='img-fluid'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus a quidem nostrum earum quae culpa, molestias tempora vitae in fuga non consequatur sit, et mollitia facilis dicta magnam dolorum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Venice-->
+<div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Venice</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/venice.jpg" alt="" class='img-fluid'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus a quidem nostrum earum quae culpa, molestias tempora vitae in fuga non consequatur sit, et mollitia facilis dicta magnam dolorum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer -->
+    <footer width="100%">
+        <ul
+          class="list-group list-group-horizontal d-flex justify-content-around"
+        >
+          <li class="list-group-item">&copy; SmartInIt 2020.</li>
+          <li class="list-group-item"><a href="">Home</a></li>
+          <li class="list-group-item"><a href="">Privacy Policy</a></li>
+          <li class="list-group-item"><a href="">Contact us</a></li>
+        </ul>
+      </footer>
+      
+      
+      
+     
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+      
+      
+      <script src="booking.js"></script>
+    </body>
+  </html>
