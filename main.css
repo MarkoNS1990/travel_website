@@ -21,6 +21,10 @@ a:hover {
   box-shadow: none !important;
 }
 
+body {
+  background-color: #fefefa;
+}
+
 /* Navbar */
 
 nav ul li {

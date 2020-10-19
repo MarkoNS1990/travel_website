@@ -38,8 +38,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only"></span></a
             >
           </li>
           <li class="nav-item">
@@ -119,7 +119,7 @@
     
     <div class="btn-group" role="group" aria-label="Basic example">
 
-      <button class="btn btn-primary btn-large m-3"  data-toggle='modal' data-target="#modalRes">Make Reservation</button>
+      <button class="btn btn-primary btn-large m-3"  data-toggle='modal' data-target="#modalRes" id='makeRes'>Make Reservation</button>
       <button class="btn btn-secondary btn-large m-3" id='viewRes'>View Reservations</button>
     </div>
    
@@ -290,6 +290,8 @@
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">Destination</label>
                   <select class="form-control" id="destination">
+                    <option>Choose destination</option>
+                    <hr>
                     <option>Venice</option>
                     <option>Paris</option>
                     <option>Thailand</option>
@@ -297,6 +299,9 @@
                     <option>New York</option>
                     <option>London</option>
                   </select>
+                </div>
+                <div class="form-group">
+                  <p id='destPrice'></p>
                 </div>
                 
                 <div class="form-group">
@@ -308,7 +313,7 @@
                   <div class="form-group">
                 
                     <label for="jmbg">JMBG</label>
-                      <input type="text" class="form-control" id="jmbg" placeholder="Enter surname">
+                      <input type="text" class="form-control" id="jmbg" placeholder="Enter jmbg">
                       
                     </div>
                     <div class="form-group">
@@ -330,18 +335,19 @@
 
   <!-- table reservations -->
   <div class="container mt-3 tableRes" style='display:none'>
-      
+      <h2 class='text-center' id='priceTotal'>Total price:</h2>
     <table id="table1" class='text-center'>
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Surname</th>
                 <th>Destination</th>
-                
+                <th>Price</th>
                 <th>Email</th>
                 <th>Note</th>
                 <th></th>
                 <th></th>
+                
                 
             </tr>
         </thead>
@@ -350,12 +356,89 @@
         </tbody>
     </table>
     
+    
+      <button class="btn btn-danger btn-large m-3" id='goBackBtn' >Go back</button>
       
-      <button class="btn btn-danger btn-large m-3" id='goBackBtn'>Go back</button>
+    
+    
     
    
 </div>
 
+<!-- Edit modal -->
+<div class="modal" tabindex="-1" role="dialog" id='modalEdit'>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Change Reservation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id='modalData'>
+          
+          
+          <form>
+            <div class="form-group">
+                
+              <label for="name1">Name</label>
+                <input type="text" class="form-control" id="name1"  placeholder="Enter name">
+                
+              </div>
+              <div class="form-group">
+                
+                <label for="surname1">Surname</label>
+                  <input type="text" class="form-control" id="surname1" placeholder="Enter surname">
+                  
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Destination</label>
+                  <select class="form-control" id="destination1">
+                    <option>Choose destination</option>
+                    <hr>
+                    <option>Venice</option>
+                    <option>Paris</option>
+                    <option>Thailand</option>
+                    <option>Rome</option>
+                    <option>New York</option>
+                    <option>London</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <p id='destPrice1'></p>
+                </div>
+                
+                <div class="form-group">
+                
+                  <label for="email1">Email address</label>
+                    <input type="email" class="form-control" id="email1" placeholder="Enter email">
+                    
+                  </div>
+                  <div class="form-group">
+                
+                    <label for="jmbg1">JMBG</label>
+                      <input type="text" class="form-control" id="jmbg1" placeholder="Enter surname">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="note1">Note:</label>
+                      <textarea class="form-control" id="note1" rows="3"></textarea>
+                    </div>
+              
+          </form>
+          
+
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id='editBtn'>Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 
     <!-- footer -->
     <footer width="100%">

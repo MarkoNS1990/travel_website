@@ -39,12 +39,13 @@
   ],
   "reservations": [
     {
-      "name": "Marko ",
-      "surname": "Zecevic",
-      "destination": "Paris",
-      "email": "marczecevic@gmail.com",
-      "jmbg": "3232",
-      "note": "hello",
+      "name": "fds",
+      "surname": "fsd",
+      "destination": "Thailand",
+      "price": "1550 E",
+      "email": "fsd",
+      "jmbg": "fds",
+      "note": "fds",
       "id": 1
     }
   ]
